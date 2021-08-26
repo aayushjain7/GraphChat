@@ -1,4 +1,5 @@
 install psql drivers => npm i pg pg-hstore
 setup sequelize => sequelize init  
 insert model => sequelize model:generate --name User --attributes username:string,email:string
+sequelize model:generate --name Message --attributes content:string,uuid:uuid,from:string,to:string
 migrate into db => sequelize db:migrate 
